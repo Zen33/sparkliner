@@ -1,0 +1,135 @@
+  /* Styling svg container */
+  .sparkliner {
+    overflow: visible;
+  }
+
+  /* Styling tooltip */
+  #sparkliner__tooltip {
+    background-color: rgb(49,39,39);
+    color: rgb(239,240,222);
+    border-radius: 6px;
+    padding: 15px;
+    display: block;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  /* Styling optional horizontal axe */
+  .sparkliner__horizontal-axe {
+    stroke: rgb(120, 141, 255);
+    stroke-width: 2;
+  }
+
+  /* Styling "bar" plot */
+  .sparkliner__bar {
+    fill: rgb(120, 141, 255);
+    transition: fill 0.3s;
+  }
+  .sparkliner__bar:hover {
+    fill: rgb(33,51,150);
+  }
+  .sparkliner__bar--underzero {
+    fill: #C64242;
+  }
+  .sparkliner__bar--underzero:hover {
+    fill: #A70707;
+  }
+
+  /* Styling "dots" plot */
+  .sparkliner__dot {
+    fill: rgb(120, 141, 255);;
+    transition: fill 0.3s;
+  }
+  g[data-dot-value]:hover .sparkliner__dot {
+    fill: rgb(33,51,150);
+  }
+  .sparkliner__dot--underzero {
+      fill: #C64242;
+  }
+  g[data-dot-value]:hover .sparkliner__dot--underzero {
+    fill: #A70707;
+  }
+  .sparkliner__dotline {
+    stroke: rgb(120, 141, 255);
+    stroke-width: 2;
+    transition: stroke 0.3s;
+  }
+  g[data-dot-value]:hover .sparkliner__dotline {
+      stroke: rgb(33,51,150);
+  }
+  .sparkliner__dotline--underzero {
+      stroke: #C64242;
+  }
+  g[data-dot-value]:hover .sparkliner__dotline--underzero {
+    stroke: #A70707;
+  }
+
+  /* Styling "polygon" plot */
+  .sparkliner__polygon-positive {
+    fill: rgb(120, 141, 255);
+    fill-opacity: 0.5;
+    stroke: rgb(120, 141, 255);
+    stroke-width: 2;
+  }
+  .sparkliner__polygon-negative {
+    fill: #C64242;
+    fill-opacity: 0.5;
+    stroke: #C64242;
+    stroke-width: 2;
+  }
+  .sparkliner__polygon-cursor {
+    stroke: black;
+    stroke-width: 2;
+    visibility: hidden;
+  }
+
+  /* Styling "histogram" plot */
+  .sparkliner__histogram-bar {
+    fill: rgb(120, 141, 255);
+    transition: fill 0.3s;
+  }
+  .sparkliner__histogram-bar:hover {
+    fill: rgb(33,51,150);
+  }
+
+  /* Styling "progressgradient" plot */
+  .sparkliner__progressgradient {
+    background: linear-gradient(to right, #C64242, rgb(120, 141, 255));
+  }
+  .sparkliner__progressgradient-line {
+    stroke: rgb(33,51,150);
+    stroke-width: 6;
+  }
+  .sparkliner__progressgradient-text {
+    fill: white;
+    font-size: 18px;
+    cursor: default;
+  }
+
+  /* Styling "progressstep" plot */
+  .sparkliner__progressstep-complete {
+    fill: rgb(120, 141, 255);
+  }
+  .sparkliner__progressstep-incomplete {
+    fill: #C64242;
+  }
+  .sparkliner__progressstep-line {
+    stroke: rgb(33,51,150);
+    stroke-width: 6;
+  }
+  .sparkliner__progressstep-text {
+    fill: white;
+    font-size: 18px;
+    cursor: default;
+  }
+
+  /* Styling "circle" plot */
+  .sparkliner__circle-text {
+    font-size: 16px;
+  }
+  .sparkliner__circle-complete {
+    fill: rgb(120, 141, 255);
+  }
+  .sparkliner__circle-incomplete {
+    fill: #C64242;
+  }

@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+    background-color: $color-header-background;
+    padding: 30px 20px;
+    padding-bottom: 0;
+    text-align: center;
+    h1 {
+        margin-top: 0;
+        color: $color-title;
+    }
+    h2 {
+        margin-bottom: 0;
+        color: $color-text-light;
+    }
+    a {
+        display: inline-block;
+        margin: 30px;
+        background-color: $color-button-background;
+        padding: 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: $color-text-light;
+        transition: background-color 0.3s, color 0.3s;
+        &:link {
+            color: $color-text-light;
+        }
+        &:visited {
+            color: $color-text-light;
+        }
+        &:hover {
+            background-color: $color-button-background--hover;
+            color: white;
+        }
+        &:target {
+            color: $color-text-light;
+        }
+    }
+}
