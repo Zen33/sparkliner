@@ -362,7 +362,7 @@ const sparkLiner = class {
         <line class="sparkliner__progressgradient-line" data-progress-value="${dataFill} / ${dataEntire}" x1="${linePosition}" y1="${this._rootHeight + this._options.progressGradientLineOverflow}" x2="${linePosition}" y2="${-this._options.progressGradientLineOverflow}" />
         <text class="sparkliner__progressgradient-text" data-progress-value="${dataFill} / ${dataEntire}" x="${this._rootWidth/2}" y="${this._rootHeight/2}" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle" >${((dataFill / dataEntire)*100).toFixed(2)}%</text>
         `;
-        const htmlTemplate = `<svg class="sparkliner sparkliner__progressgradient" data-progress-value="${dataFill} / ${dataEntire}" style="overflow:block" height="${this._rootHeight}" width="${this._rootWidth}">${innerTemplate}</svg>`;
+        const htmlTemplate = `<svg class="sparkliner sparkliner__progressgradient" data-progress-value="${dataFill} / ${dataEntire}" style="overflow:visible" height="${this._rootHeight}" width="${this._rootWidth}">${innerTemplate}</svg>`;
         this._root.innerHTML = htmlTemplate;
 
         if (this._options.showTooltips) {
@@ -400,7 +400,7 @@ const sparkLiner = class {
             <line class="sparkliner__progressstep-line" data-progress-value="${dataFill} / ${dataEntire}" x1="${linePosition}" y1="${this._rootHeight + this._options.progressStepLineOverflow}" x2="${linePosition}" y2="${-this._options.progressStepLineOverflow}" />
             <text class="sparkliner__progressstep-text" data-progress-value="${dataFill} / ${dataEntire}" x="${this._rootWidth/2}" y="${this._rootHeight/2}" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle" >${(dataFill * 100 / dataEntire).toFixed(2)}%</text>
         `;
-        const htmlTemplate = `<svg class="sparkliner" style="overflow:block" height="${this._rootHeight}" width="${this._rootWidth}">${innerTemplate}</svg>`;
+        const htmlTemplate = `<svg class="sparkliner" style="overflow:visible" height="${this._rootHeight}" width="${this._rootWidth}">${innerTemplate}</svg>`;
         this._root.innerHTML = htmlTemplate;
 
         if (this._options.showTooltips) {

@@ -79,7 +79,7 @@
   .sparkliner__polygon-cursor {
     stroke: black;
     stroke-width: 2;
-    visibility: hidden;
+    display: none;
   }
 
   /* Styling "histogram" plot */
@@ -125,6 +125,7 @@
   /* Styling "circle" plot */
   .sparkliner__circle-text {
     font-size: 16px;
+    cursor: default;
   }
   .sparkliner__circle-complete {
     fill: rgb(120, 141, 255);
