@@ -9,9 +9,8 @@
     color: rgb(239,240,222);
     border-radius: 6px;
     padding: 15px;
-    display: block;
+    display: none;
     position: absolute;
-    visibility: hidden;
   }
 
   /* Styling optional horizontal axe */
